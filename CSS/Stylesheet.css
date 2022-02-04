@@ -5,7 +5,7 @@
 
 body {
     margin: 0px;
-    background-color: #111111;
+    background-image: url(".images/tsukinami.jpg");
 }
 
 @media screen and (max-width: 1200px) {
@@ -374,7 +374,7 @@ body {
         font-weight: bold;
         font-size: 120%;
         text-align: center;
-        color: #9ac2fa;
+        color: #4285f4;
         margin: 25px auto;
         text-decoration: none;
     }
