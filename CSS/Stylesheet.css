@@ -5,7 +5,8 @@
 
 body {
     margin: 0px;
-    background-image: url(".images/tsukinami.jpg");
+    background-image: url("/images/tsukinami.jpg");
+    background-attachment: fixed;
 }
 
 @media screen and (max-width: 1200px) {
@@ -221,6 +222,7 @@ body {
 
 
 @media screen and (min-width: 1201px) {
+
     .footerleft {
         float: left;
         width: 100%;
@@ -326,7 +328,7 @@ body {
         display: flex;
         padding: 5px 45px;
         height: auto;
-        width: 205px;
+        width: 150px;
         float: left;
     }
 
@@ -344,39 +346,42 @@ body {
     }
 
     .navbar {
-        height: 80px;
+        display: flex;
+        height: 60px;
         background-color: #1b1b1b;
         width: 80%;
         padding: 0px 10%;
+        margin-left: auto;
+        margin-right: auto;
+        align-items: center;
+        justify-content: center;
     }
 
     .button:hover {
         display: flex;
         padding: 0 50px;
-        float: right;
+        float: left;
         border: none;
         font-family: "Poppins", sans serif;
-        font-weight: bold;
-        font-size: 120%;
+        font-size: 100%;
         text-align: center;
         text-decoration: none;
-        color: #dabaff;
-        margin: 25px auto;
+        color: #ffffff;
         transition: 0.5s;
+        justify-content: center;
     }
 
     .button {
         display: flex;
+        float: left;
         padding: 0 50px;
-        float: right;
         border: none;
         font-family: "Poppins", sans serif;
-        font-weight: bold;
-        font-size: 120%;
-        text-align: center;
+        font-size: 100%;
+        text-align: left;
         color: #4285f4;
-        margin: 25px auto;
         text-decoration: none;
+        justify-content: center;
     }
 
     .button2 {
