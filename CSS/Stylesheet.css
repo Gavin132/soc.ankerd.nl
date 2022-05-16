@@ -2,25 +2,13 @@
 @import url('https://fonts.googleapis.com/css?family=Montserrat');
 @import url('https://fonts.googleapis.com/css2?family=Poiret+One&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;800&display=swap');
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap');
 
 body {
     margin: 0px;
+    background-color: #111111;
 }
 
 @media screen and (max-width: 1200px) {
-    .backgroundimage {
-        margin: 0px;
-        position: fixed;
-        left: 0px;
-        top: 0px;
-        z-index: -1;
-        width: 100%;
-        height: 100%;
-        -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
-        filter: blur(5px);
-    }
-
     .footerleft {
         float: left;
         width: 100%;
@@ -73,15 +61,25 @@ body {
     }
 
     p {
-        padding: 0px 5%;
         font-family: "Open Sans", sans serif;
         color: white;
+        padding: 10px 5%;
     }
 
     header {
-        font-size: 200%;
+        font-size: 100%;
         font-family: "Poppins", sans serif;
-        padding: 10px 5%;
+        padding: 0px 5%;
+        font-weight: bold;
+        color: white;
+    }
+
+    .header3 {
+        display: block;
+        font-family: "Poppins", sans serif;
+        font-size: 180%;
+        font-weight: bold;
+        text-align: left;
         font-weight: bold;
         color: white;
     }
@@ -98,9 +96,6 @@ body {
     pcontact {
         font-family: "Open Sans", sans serif;
         color: white;
-        display: flex;
-        flex-wrap: wrap;
-        margin-top: 10px;
     }
 
     .header2 {
@@ -124,43 +119,45 @@ body {
 
     .imgfooter {
         display: flex;
-        width: 20%;
+        width: 50%;
     }
 
 
-    .navbar {
-        height: auto;
+    .navbarleft {
+        display: flex;
+        background-color: #1b1b1b;
         width: 100%;
-        background-color: #232629;
-        text-align: center;
+        height: 58px;
+        justify-content: center;
+    }
+
+    .navbarright {
+        display: flex;
+        background-color: #1b1b1b;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
     }
 
     .button:hover {
-        display: flex;
-        padding: 5px 5%;
-        font-family: "Poppins", sans serif;
-        font-weight: bold;
-        font-size: 120%;
-        justify-content: center;
         text-decoration: none;
-        color: #dabaff;
+        color: #cefcff;
+        font-family: "Open Sans", sans serif;
+        font-weight: lighter;
         transition: 0.5s;
-        margin-left: auto;
-        margin-right: auto;
     }
 
     .button {
-        display: flex;
-        padding: 5px 5%;
-        font-family: "Poppins", sans serif;
-        font-weight: bold;
-        font-size: 120%;
-        text-align: center;
         text-decoration: none;
-        color: #9ac2fa;
-        margin-left: auto;
-        margin-right: auto;
-        justify-content: center;
+        color: white;
+        font-family: "Open Sans", sans serif;
+        font-weight: lighter;
+        padding: 0px 10px 0px 10px;
+        padding-top: 5px;
+        padding-bottom: 15px;
     }
 
     .button2 {
@@ -174,8 +171,10 @@ body {
     .imgcenter {
         margin-left: auto;
         margin-right: auto;
-        width: 70%;
+        width: 90%;
         display: block;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     .members {
@@ -196,19 +195,11 @@ body {
         display: flex;
     }
 
-    .bloglink {
-        font-family: "Open Sans", sans serif;
-        color: white;
-        font-weight: bold;
-    }
-
-
     .contactbox {
         float: left;
         margin-left: 20px;
         margin-right: 20px;
-        border: solid;
-        border-radius: 15px;
+        border-radius: 5px;
         background-color: #2D2D2D;
         border-color: #1b1b1b;
         padding: 20px;
@@ -216,36 +207,105 @@ body {
         align-content: center;
         justify-content: center;
         align-items: center;
-        text-align: center;
         display: flex;
         margin-top: 20px;
         max-width: 80%;
+        transition: 0.5s;
     }
 
     .contactcenter {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
+        transition: 0.5s;
     }
 
-}   /*let goed op dit verdomde haakje!!!*/
+    .p {
+        display: flex;
+        font-family: "Open Sans", sans serif;
+        font-size: 100%;
+        color: white;
+        margin-left: 5%;
+        margin-right: 5%;
+        align-items: center;
+        justify-content: center;
+        flex-wrap: wrap;
+        width: 80%;
+    }
+
+    .link {
+        text-align: justify;
+        font-family: "Open Sans", sans serif;
+        font-size: 100%;
+        color: white;
+        text-decoration: underline;
+        display: inline-flex;
+    }
+
+        .link:hover {
+            text-align: justify;
+            font-family: "Open Sans", sans serif;
+            font-size: 100%;
+            color: gray;
+            text-decoration: underline;
+            display: inline-flex;
+        }
+
+    .bloglink {
+        text-align: justify;
+        font-family: "Open Sans", sans serif;
+        font-size: 120%;
+        color: white;
+        text-decoration: underline;
+        display: inline-flex;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+        .bloglink:hover {
+            text-align: justify;
+            font-family: "Open Sans", sans serif;
+            font-size: 120%;
+            color: gray;
+            text-decoration: underline;
+            display: inline-flex;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            transition: 0.5s;
+        }
+
+    .hr {
+        width: 100%;
+        height: 1px;
+        border-width: 0;
+        color: gray;
+        background-color: gray;
+    }
+
+    .youtube {
+        width: 90%;
+        height: 25%;
+    }
+
+    .imgcenterdiv {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .imggallery {
+        float: left;
+        width: 90%;
+        margin: 10px;
+    }
+}
+/*let goed op dit verdomde haakje!!!*/
 
 
 
 @media screen and (min-width: 1201px) {
-
-    .backgroundimage {
-        margin: 0px;
-        position: fixed;
-        left: 0px;
-        top: 0px;
-        z-index: -1;
-        width: 100%;
-        height: 100%;
-        -webkit-filter: blur(5px); /* Safari 6.0 - 9.0 */
-        filter: blur(5px);
-    }
-
     .footerleft {
         float: left;
         width: 100%;
@@ -301,11 +361,14 @@ body {
     pcontact {
         font-family: "Open Sans", sans serif;
         color: white;
+    }
+
+    pcontact2 {
+        font-family: "Open Sans", sans serif;
+        color: white;
         display: flex;
-        flex-wrap: wrap;
-        margin-top: 10px;
-        text-align: center;
-        justify-content: center;
+        flex-direction: column;
+        align-items: center;
     }
 
     p {
@@ -326,7 +389,16 @@ body {
         margin-left: 13%;
         color: white;
     }
-        
+
+    .header3 {
+        display: block;
+        font-family: "Poppins", sans serif;
+        font-size: 200%;
+        font-weight: bold;
+        font-weight: bold;
+        color: white;
+    }
+
     p2 {
         display: block;
         font-family: "Open Sans", sans serif;
@@ -348,11 +420,8 @@ body {
     }
 
     .imgnavbar {
-        display: flex;
-        padding: 5px 45px;
-        height: auto;
-        width: 150px;
-        float: left;
+        height: 50px;
+        padding: 4px 0px 4px 0px;
     }
 
     .imgfooter {
@@ -368,43 +437,40 @@ body {
         margin-left: 1%;
     }
 
-    .navbar {
+    .navbarleft {
+        margin-left: 13%;
         display: flex;
-        height: 60px;
-        background-color: #232629;
-        width: 80%;
-        padding: 0px 10%;
-        margin-left: auto;
-        margin-right: auto;
+        justify-content: left;
+        background-color: #1b1b1b;
+        width: 100%;
+        height: 58px;
+    }
+
+    .navbarright {
+        margin-left: 0%;
+        display: flex;
+        margin-right: 13%;
+        justify-content: flex-end;
+        background-color: #1b1b1b;
+        width: 100%;
+        height: 58px;
         align-items: center;
-        justify-content: center;
     }
 
     .button:hover {
-        display: flex;
-        padding: 0 50px;
-        float: left;
-        border: none;
-        font-family: "Roboto", sans serif;
-        font-size: 100%;
-        text-align: center;
         text-decoration: none;
-        color: #ffffff;
-        transition: 0.2s;
-        justify-content: center;
+        color: #cefcff;
+        font-family: "Open Sans", sans serif;
+        font-weight: lighter;
+        transition: 0.5s;
     }
 
     .button {
-        display: flex;
-        float: left;
-        padding: 0 50px;
-        border: none;
-        font-family: "Roboto", sans serif;
-        font-size: 100%;
-        text-align: left;
-        color: #4285f4;
         text-decoration: none;
-        justify-content: center;
+        color: white;
+        font-family: "Open Sans", sans serif;
+        font-weight: lighter;
+        padding: 0px 40px 0px 40px;
     }
 
     .button2 {
@@ -418,9 +484,11 @@ body {
     .imgcenter {
         margin-left: auto;
         margin-right: auto;
-        width: 30%;
+        width: 50%;
         display: block;
         text-align: left;
+        margin-top: 20px;
+        margin-bottom: 20px;
     }
 
     .members {
@@ -435,28 +503,22 @@ body {
     }
 
     .imginp {
-        display: flex;
+        display: block;
         padding: 10px 10px;
         width: 30%;
+        height: auto;
         float: left;
-    }
-
-    .bloglink {
-        display: inline-flex;
-        font-family: "Open Sans", sans serif;
-        font-size: 100%;
-        color: white;
-        font-weight: bold;
     }
 
     .contactcenter {
         display: flex;
-        align-items: center;
+        align-items: flex-start;
         justify-content: center;
         flex-wrap: wrap;
+        transition: 0.5s;
     }
 
-/*    .contactboxleft {
+    /*    .contactboxleft {
         float: left;
         border: solid;
         border-radius: 15px;
@@ -471,18 +533,89 @@ body {
     .contactbox {
         float: left;
         margin-left: 20px;
-        border: solid;
-        border-radius: 15px;
+        border-radius: 5px;
         background-color: #2D2D2D;
         border-color: #1b1b1b;
-        padding: 20px;
+        padding-left: 20px;
+        padding-right: 20px;
+        padding-bottom: 20px;
         display: flex;
         flex-direction: column;
         align-content: center;
         justify-content: center;
         align-items: center;
-        text-align: center;
         margin-top: 20px;
+        transition: 0.5s;
+    }
+
+    .link {
+        text-align: justify;
+        font-family: "Open Sans", sans serif;
+        font-size: 100%;
+        color: white;
+        text-decoration: underline;
+        display: inline-flex;
+    }
+
+        .link:hover {
+            text-align: justify;
+            font-family: "Open Sans", sans serif;
+            font-size: 100%;
+            color: gray;
+            text-decoration: underline;
+            display: inline-flex;
+        }
+
+    .bloglink {
+        text-align: justify;
+        font-family: "Open Sans", sans serif;
+        font-size: 120%;
+        color: white;
+        text-decoration: underline;
+        display: inline-flex;
+        padding-top: 10px;
+        padding-bottom: 10px;
+    }
+
+        .bloglink:hover {
+            text-align: justify;
+            font-family: "Open Sans", sans serif;
+            font-size: 120%;
+            color: gray;
+            text-decoration: underline;
+            display: inline-flex;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            transition: 0.5s;
+        }
+
+    .hr {
+        width: 100%;
+        height: 1px;
+        border-width: 0;
+        color: gray;
+        background-color: gray;
+    }
+
+    .youtube {
+        width: 640px;
+        height: 390px;
+    }
+
+    .imgcenterdiv {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: row;
+        flex-wrap: wrap;
+        margin-left: 12%;
+        margin-right: 12%;
+    }
+
+    .imggallery {
+        float: left;
+        width: 48%;
+        margin: 10px;
     }
 
     /* width */
