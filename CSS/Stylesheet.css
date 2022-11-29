@@ -5,9 +5,10 @@
 
 body {
     margin: 0px;
-    background-color: #111111;
+    background-color: #000;
 }
 
+/*mobile css*/
 @media screen and (max-width: 1200px) {
     .footerleft {
         float: left;
@@ -15,7 +16,7 @@ body {
         display: flex;
         justify-content: left;
         padding: 5px;
-        background-color: #1b1b1b;
+        background-color: #111;
         color: lightgray;
         font-family: "Open Sans", sans serif;
         font-style: italic;
@@ -30,7 +31,7 @@ body {
         display: flex;
         justify-content: right;
         padding: 5px 10px;
-        background-color: #1b1b1b;
+        background-color: #111;
         color: lightgray;
         font-family: "Open Sans", sans serif;
         font-style: italic;
@@ -48,7 +49,7 @@ body {
         left: 50%;
         transform: translate(-50%, -50%);
         color: white;
-        opacity: 10%;
+        opacity: 20%;
     }
 
     pmembers {
@@ -98,6 +99,12 @@ body {
         color: white;
     }
 
+    pcontact2 {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
     .header2 {
         display: block;
         font-family: "Poppins", sans serif;
@@ -122,18 +129,18 @@ body {
         width: 50%;
     }
 
-
     .navbarleft {
         display: flex;
-        background-color: #1b1b1b;
+        background-color: #111;
         width: 100%;
         height: 58px;
         justify-content: center;
+        align-items: center;
     }
 
     .navbarright {
         display: flex;
-        background-color: #1b1b1b;
+        background-color: #111;
         width: 100%;
         height: auto;
         flex-direction: row;
@@ -144,10 +151,10 @@ body {
 
     .button:hover {
         text-decoration: none;
-        color: #cefcff;
+        color: #f25a02;
         font-family: "Open Sans", sans serif;
         font-weight: lighter;
-        transition: 0.5s;
+        transition: 0.3s;
     }
 
     .button {
@@ -183,7 +190,7 @@ body {
         width: 90%;
         float: left;
         border: solid;
-        border-radius: 10px;
+        border-radius: 20px;
         border-color: white;
         display: flex;
     }
@@ -199,9 +206,9 @@ body {
         float: left;
         margin-left: 20px;
         margin-right: 20px;
-        border-radius: 5px;
-        background-color: #2D2D2D;
-        border-color: #1b1b1b;
+        border-radius: 20px;
+        background-color: #111;
+        border-color: #111;
         padding: 20px;
         flex-direction: column;
         align-content: center;
@@ -246,9 +253,10 @@ body {
             text-align: justify;
             font-family: "Open Sans", sans serif;
             font-size: 100%;
-            color: gray;
+            color: #f25a02;
             text-decoration: underline;
             display: inline-flex;
+            transition: 0.3s;
         }
 
     .bloglink {
@@ -266,16 +274,24 @@ body {
             text-align: justify;
             font-family: "Open Sans", sans serif;
             font-size: 120%;
-            color: gray;
+            color: #f25a02;
             text-decoration: underline;
             display: inline-flex;
             padding-top: 10px;
             padding-bottom: 10px;
-            transition: 0.5s;
+            transition: 0.3s;
         }
 
     .hr {
         width: 100%;
+        height: 1px;
+        border-width: 0;
+        color: gray;
+        background-color: gray;
+    }
+
+    .hr2 {
+        width: 90%;
         height: 1px;
         border-width: 0;
         color: gray;
@@ -300,11 +316,95 @@ body {
         width: 90%;
         margin: 10px;
     }
+
+    .pagenumberbutton {
+        text-decoration: none;
+        color: white;
+        font-family: "Open Sans", sans serif;
+        font-weight: bold;
+        padding: 10px 10px 10px 10px;
+    }
+
+        .pagenumberbutton:hover {
+            text-decoration: none;
+            color: #f25a02;
+            font-family: "Open Sans", sans serif;
+            font-weight: bold;
+            transition: 0.3s;
+            border: 10px;
+            background-color: gray;
+            border-radius: 8px;
+        }
+
+    .pagenumberleft {
+        display: flex;
+        margin-left: 5%;
+        text-decoration: none;
+        color: white;
+        font-family: "Open Sans", sans serif;
+        font-weight: bold;
+        width: 100%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .pagenumberright {
+        margin-left: 0%;
+        margin-right: 5%;
+        text-align: right;
+        width: 100%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+
+    ::selection {
+        color: black;
+        background: #f25a02;
+    }
+
+    .navbarleft {
+        display: flex;
+        background-color: #111;
+        width: 100%;
+        height: 58px;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .navbarright {
+        display: flex;
+        background-color: #111;
+        width: 100%;
+        height: auto;
+        flex-direction: row;
+        flex-wrap: wrap;
+        justify-content: space-evenly;
+        align-items: center;
+    }
+
+    .imgnavbar {
+        display: flex;
+        width: 150px;
+        margin-left: auto;
+        margin-right: auto;
+        padding: 2% 0;
+    }
+
+
+
+
+    /*let goed op dit verdomde haakje!!!*/
 }
-/*let goed op dit verdomde haakje!!!*/
 
 
 
+
+
+
+
+
+/*---------------------------------------------------pc css------------------------------------------------*/
 @media screen and (min-width: 1201px) {
     .footerleft {
         float: left;
@@ -312,7 +412,7 @@ body {
         display: flex;
         justify-content: left;
         padding: 5px;
-        background-color: #1b1b1b;
+        background-color: #111;
         color: lightgray;
         font-family: "Open Sans", sans serif;
         font-style: italic;
@@ -327,7 +427,7 @@ body {
         display: flex;
         justify-content: right;
         padding: 5px 10px;
-        background-color: #1b1b1b;
+        background-color: #111;
         color: lightgray;
         font-family: "Open Sans", sans serif;
         font-style: italic;
@@ -347,7 +447,7 @@ body {
         transform: translate(-50%, -50%);
         color: white;
         transition: 1s;
-        opacity: 10%;
+        opacity: 20%;
     }
 
     pmembers {
@@ -369,6 +469,7 @@ body {
         display: flex;
         flex-direction: column;
         align-items: center;
+        padding-top: 12px;
     }
 
     p {
@@ -403,7 +504,8 @@ body {
         display: block;
         font-family: "Open Sans", sans serif;
         text-align: center;
-        padding: 0px 33%;
+        margin-left: 13%;
+        margin-right: 13%;
         font-size: 100%;
         color: white;
     }
@@ -419,11 +521,6 @@ body {
         font-weight: bold;
     }
 
-    .imgnavbar {
-        height: 50px;
-        padding: 4px 0px 4px 0px;
-    }
-
     .imgfooter {
         width: 100px;
         display: flex;
@@ -437,32 +534,12 @@ body {
         margin-left: 1%;
     }
 
-    .navbarleft {
-        margin-left: 13%;
-        display: flex;
-        justify-content: left;
-        background-color: #1b1b1b;
-        width: 100%;
-        height: 58px;
-    }
-
-    .navbarright {
-        margin-left: 0%;
-        display: flex;
-        margin-right: 13%;
-        justify-content: flex-end;
-        background-color: #1b1b1b;
-        width: 100%;
-        height: 58px;
-        align-items: center;
-    }
-
     .button:hover {
         text-decoration: none;
-        color: #cefcff;
+        color: #f25a02;
         font-family: "Open Sans", sans serif;
         font-weight: lighter;
-        transition: 0.5s;
+        transition: 0.3s;
     }
 
     .button {
@@ -470,7 +547,7 @@ body {
         color: white;
         font-family: "Open Sans", sans serif;
         font-weight: lighter;
-        padding: 0px 40px 0px 40px;
+        transition: 0.3s
     }
 
     .button2 {
@@ -498,7 +575,7 @@ body {
         width: 20%;
         float: left;
         border: solid;
-        border-radius: 10px;
+        border-radius: 20px;
         border-color: white;
     }
 
@@ -512,30 +589,19 @@ body {
 
     .contactcenter {
         display: flex;
-        align-items: flex-start;
+        align-items: center;
         justify-content: center;
         flex-wrap: wrap;
         transition: 0.5s;
     }
 
-    /*    .contactboxleft {
-        float: left;
-        border: solid;
-        border-radius: 15px;
-        background-color: #2D2D2D;
-        border-color: #1b1b1b;
-        padding: 20px;
-        display: block;
-        text-align: center;
-    }
-    */
 
     .contactbox {
         float: left;
         margin-left: 20px;
-        border-radius: 5px;
-        background-color: #2D2D2D;
-        border-color: #1b1b1b;
+        border-radius: 20px;
+        background-color: #111;
+        border-color: #111;
         padding-left: 20px;
         padding-right: 20px;
         padding-bottom: 20px;
@@ -555,15 +621,17 @@ body {
         color: white;
         text-decoration: underline;
         display: inline-flex;
+        transition: 0.3s;
     }
 
         .link:hover {
             text-align: justify;
             font-family: "Open Sans", sans serif;
             font-size: 100%;
-            color: gray;
+            color: #f25a02;
             text-decoration: underline;
             display: inline-flex;
+            transition: 0.3s;
         }
 
     .bloglink {
@@ -575,22 +643,31 @@ body {
         display: inline-flex;
         padding-top: 10px;
         padding-bottom: 10px;
+        transition: 0.3s;
     }
 
         .bloglink:hover {
             text-align: justify;
             font-family: "Open Sans", sans serif;
             font-size: 120%;
-            color: gray;
+            color: #f25a02;
             text-decoration: underline;
             display: inline-flex;
             padding-top: 10px;
             padding-bottom: 10px;
-            transition: 0.5s;
+            transition: 0.3s;
         }
 
     .hr {
         width: 100%;
+        height: 1px;
+        border-width: 0;
+        color: gray;
+        background-color: gray;
+    }
+
+    .hr2 {
+        width: 75%;
         height: 1px;
         border-width: 0;
         color: gray;
@@ -618,6 +695,84 @@ body {
         margin: 10px;
     }
 
+    .pagenumberbutton {
+        text-decoration: none;
+        color: white;
+        font-family: "Open Sans", sans serif;
+        font-weight: bold;
+        padding: 10px 10px 10px 10px;
+    }
+
+        .pagenumberbutton:hover {
+            text-decoration: none;
+            color: #f25a02;
+            font-family: "Open Sans", sans serif;
+            font-weight: bold;
+            transition: 0.3s;
+        }
+
+    .pagenumberleft {
+        display: flex;
+        margin-left: 13%;
+        text-decoration: none;
+        color: white;
+        font-family: "Open Sans", sans serif;
+        font-weight: bold;
+        width: 100%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .pagenumberright {
+        margin-left: 0%;
+        margin-right: 13%;
+        text-align: right;
+        width: 100%;
+        margin-top: 5px;
+        margin-bottom: 5px;
+    }
+
+    .navbarleft {
+        display: flex;
+        background-color: rgba(17,17,17,0.7);
+        height: 58px;
+        align-items: center;
+        float: left;
+        width: 37%;
+        padding-left: 13%;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+
+    }
+
+    .navbarright {
+        display: flex;
+        background-color: rgba(17,17,17,0.7);
+        align-items: center;
+        height: 58px;
+        float: right;
+        width: 37%;
+        justify-content: flex-end;
+        padding-right: 13%;
+        backdrop-filter: blur(10px);
+        -webkit-backdrop-filter: blur(10px);
+
+    }
+
+    .imgnavbar {
+        height: 50px;
+        padding: 4px 0px 4px 0px;
+    }
+
+
+
+
+
+
+
+
+
+    /*----------------------------scrollbar----------------------------------*/
     /* width */
     ::-webkit-scrollbar {
         width: 8px;
@@ -640,4 +795,9 @@ body {
         ::-webkit-scrollbar-thumb:hover {
             background: #555;
         }
+
+    ::selection {
+        color: black;
+        background: #f25a02;
+    }
 }
